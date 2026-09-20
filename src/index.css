@@ -3014,3 +3014,174 @@ button:focus-visible {
   height: 26px;
 }
 
+/* =========================================================
+   FINAL MOBILE WIDTH + ALIGNMENT FIX
+   ========================================================= */
+
+@media (max-width: 680px) {
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .app-shell {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    display: block;
+    overflow-x: hidden;
+  }
+
+  .main-content {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    margin-left: 0 !important;
+    overflow-x: hidden;
+  }
+
+  .page-container {
+    width: calc(100% - 24px) !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 12px !important;
+    padding: 0 0 30px !important;
+    box-sizing: border-box;
+  }
+
+  .dashboard-grid,
+  .status-grid,
+  .charts-grid,
+  .lower-grid,
+  .data-grid,
+  .settings-grid,
+  .analysis-grid {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .dashboard-grid,
+  .charts-grid,
+  .lower-grid,
+  .data-grid,
+  .settings-grid,
+  .analysis-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .status-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .card,
+  .status-card,
+  .chart-card,
+  .dashboard-card,
+  .generic-page,
+  .section,
+  .hero {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .hero {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  .hero-content {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .chart {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  .transition-map-fixed {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .transition-stages,
+  .transition-stage-fixed,
+  .transition-copy-fixed {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .transition-visual-fixed {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .full-transition {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .full-transition-stage {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .section-heading,
+  .hero-content,
+  .card-header,
+  .action-content,
+  .generic-heading {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  img,
+  svg,
+  canvas {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+
+  .page-container {
+    width: calc(100% - 20px) !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+
+  .status-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero-content {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+}
+
