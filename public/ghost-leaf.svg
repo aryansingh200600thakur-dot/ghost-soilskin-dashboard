@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#1f4d36"/>
+
+  <path
+    d="M390 96
+       C285 104 181 148 135 245
+       C105 308 119 374 174 405
+       C230 437 296 417 339 365
+       C384 311 399 213 390 96Z"
+    fill="#8fbf7f"
+  />
+
+  <path
+    d="M145 398
+       C205 342 267 263 367 128"
+    fill="none"
+    stroke="#f7f5ef"
+    stroke-width="18"
+    stroke-linecap="round"
+  />
+</svg>
